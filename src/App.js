@@ -49,11 +49,15 @@ function App() {
   return (
     <div className="container">
       <Logo />
+      <Display number = {displayValue}/>
       <div className="App">
-        <Display number = {displayValue}/>
-        <Numbers addNumber = {addNewNumber} />
-        <Operators addOperator = {addNewOperator} />
-        <Specials addSpecials = {addNewSpecials}/>
+        <div className = "left-side">
+          <Specials addSpecials = {addNewSpecials}/>
+          <Numbers addNumber = {addNewNumber} />
+        </div>
+        <div className = "right-side">
+          <Operators addOperator = {addNewOperator} />
+        </div>
         
         {/* STEP 4 - Render your components here and be sure to properly import/export all files */}
       </div>

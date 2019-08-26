@@ -1,0 +1,92 @@
+.container{
+    background-color: #bb1233;
+    width: 392px;
+    height: 601px;
+    margin: auto;
+    padding: 12px;
+    border-radius: 15px;
+}
+
+.logo-container{
+    padding: 5px;
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+.logo{
+    width: 25%;
+    padding: 20px;
+}
+
+.display{
+    width: 380px;
+    height: 80px;
+    font-size: 40px;
+    background-color: #2D2829;
+    margin: auto;
+    border-radius: 50px;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    align-content: center;
+    justify-content: flex-end;
+    
+}
+
+.App{
+    display: flex;
+    margin: auto;
+    flex-direction: row;
+    padding: 10px;
+}
+
+.right-side div{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    
+}
+
+.buttons-operators{
+    background-color: #3db5e5;
+    color: white;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    font-size: 30px;
+    margin: 5px 10px;
+}
+
+.left-side {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.buttons-numbers {
+    background-color: #113c78;
+    color: white;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    font-size: 30px;
+    margin: 5px 10px;
+}
+
+.buttons-specials{
+    background-color: #2061b0;
+    color: white;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    font-size: 30px;
+    margin: 5px 10px;
+    
+}
+
+#b0 {
+    width: 150px;
+    border-radius: 35px;
+}

@@ -1,16 +1,26 @@
-import React from "react";
-
+import React, {useState} from "react";
+import {numbers} from "../../../data";
+import NumberButton from "./NumberButton";
+import { tsPropertySignature } from "@babel/types";
 //import any components needed
 
 //Import your array data to from the provided data file
 
-const Numbers = () => {
+const Numbers = (props) => {
+  const [numberState, setNumberState] = useState(numbers);
   // STEP 2 - add the imported data to state
   return (
     <div>
-      {/* STEP 3 - Use .map() to iterate over your array data and return a button
+      {
+        numberState.map((item) => {
+          return <NumberButton key = {item} text = {item} addNumber = {props.addNumber}/>
+        })
+        /* STEP 3 - Use .map() to iterate over your array data and return a button
        component matching the name on the provided file. Pass
-       it any props needed by the child component*/}
+       it any props needed by the child component*/
+      }
     </div>
   );
 };
+
+export default Numbers;
